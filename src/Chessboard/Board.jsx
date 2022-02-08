@@ -1,6 +1,4 @@
-import React, {useState, useCallback} from 'react'
-import { DndProvider } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
+import React, {useState} from 'react'
 import Square from './Square'
 
 export const WHITE = "white";
@@ -29,9 +27,8 @@ export const Board = () => {
     newFigures[x][y] = {type: figure.type, color: figure.color};
     setFigures(newFigures);
   };
-  console.log(figures);
+
   return (
-    <DndProvider backend={HTML5Backend}>
       <table className="board">
         <tbody>
         {figures.map((item, row) => (
@@ -40,7 +37,6 @@ export const Board = () => {
         </tr>))}
         </tbody>
       </table>
-    </DndProvider>
   )
 }
 

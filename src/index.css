@@ -50,3 +50,11 @@ table.board td.selected {
   border-color: white;
   color: white;
 }
+ol.list {
+  border: 1px solid black;
+  padding: 1em;
+}
+ol.list li.item {
+  margin: .5em;
+  cursor: move
+}
