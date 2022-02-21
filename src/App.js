@@ -3,6 +3,7 @@ import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import Board from './Chessboard/Board';
 import List from './Reorder/List';
+import Container from './Fruits/Container';
 import './App.css';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <Board />
     <h1>Seznam</h1>
     <List />
+    <h1>Ovoce</h1>
+    <Container />
     </DndProvider>
   );
 }
